@@ -1,0 +1,9 @@
+version: '100'
+services:
+ app:
+  image: nginx
+  # container_name: my_custom_web_container
+  volumes:
+   - .:/usr/share/nginx/html
+  ports:
+   - "80"
